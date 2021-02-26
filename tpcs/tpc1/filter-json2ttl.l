@@ -24,7 +24,7 @@ Abrev ER
     \"designacao\"\:[ ]\"[^\"]*\"/\,     {printf(":designacao %s ;",yytext+14);}
     \"anoLetivo\"\:[ ]\"[^\"]*\"         {printf(":anoletivo %s .",yytext+13);}
     \}                                   {BEGIN UCS;}
-    \,|\n|\"                             ;
+    \,|\"|\t|\r                             ;
   }
   \]              {BEGIN 0;printf("\n################## DOCENTES ##################\n");}
 }
@@ -69,7 +69,7 @@ Abrev ER
                                             printf(".");
                                           }
     \}                                    {BEGIN DOC;}
-    \,|\n|\"                              ;
+    \,|\"|\t|\r                              ;
   }
   \]              {BEGIN 0;printf("\n################## ALUNOS ##################\n");}
 }
@@ -111,7 +111,7 @@ Abrev ER
                                             printf(".");
                                           }
     \}                                    {BEGIN ALUNOS;}
-    \,|\n|\"                              ;
+    \,|\"|\t|\r                              ;
   }
   \]              {BEGIN 0;}
 }
