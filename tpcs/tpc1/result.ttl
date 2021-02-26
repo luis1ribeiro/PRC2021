@@ -90,224 +90,1296 @@
 #    Individuals
 #################################################################
 
-	################## UCS ##################
-                    ### http://www.semanticweb.org/xalug/ontologies/uc#PRC
-		:PRC rdf:type owl:NameIndividual , :UC ;		            :designacao "Processamento e Representação de Conhecimento" ;		            :anoletivo "2020/2021" .                     ### http://www.semanticweb.org/xalug/ontologies/uc#SPLN
-		:SPLN rdf:type owl:NameIndividual , :UC ;		            :designacao "Scripting no Processamento de Linguagem Natural" ;		            :anoletivo "2020/2021" .                     ### http://www.semanticweb.org/xalug/ontologies/uc#PRI
-		:PRI rdf:type owl:NameIndividual , :UC ;		            :designacao "Processamento e Representação de Informação" ;		            :anoletivo "2020/2021" .                     ### http://www.semanticweb.org/xalug/ontologies/uc#GCS
-		:GCS rdf:type owl:NameIndividual , :UC ;		            :designacao "Gramáticas na Compreensão de Software" ;		            :anoletivo "2020/2021" .                            ### http://www.semanticweb.org/xalug/ontologies/uc#CSI
-		:CSI rdf:type owl:NameIndividual , :UC ;		            :designacao "Cálculo de Sistemas de Informação" ;		            :anoletivo "2020/2021" .                            ### http://www.semanticweb.org/xalug/ontologies/uc#EM
-		:EM rdf:type owl:NameIndividual , :UC ;		            :designacao "Especificação e Modelação" ;		            :anoletivo "2020/2021" .                            ### http://www.semanticweb.org/xalug/ontologies/uc#AC
-		:AC rdf:type owl:NameIndividual , :UC ;		            :designacao "Arquitetura e Cálculo" ;		            :anoletivo "2020/2021" .                            ### http://www.semanticweb.org/xalug/ontologies/uc#VF
-		:VF rdf:type owl:NameIndividual , :UC ;		            :designacao "Verificação Formal" ;		            :anoletivo "2020/2021" .            
+
+      ################## UCS ##################
+
+            ### http://www.semanticweb.org/xalug/ontologies/uc#PRC
+		:PRC rdf:type owl:NameIndividual , :UC ;		
+            :designacao "Processamento e Representação de Conhecimento" ;		
+            :anoletivo "2020/2021" .
+         
+            ### http://www.semanticweb.org/xalug/ontologies/uc#SPLN
+		:SPLN rdf:type owl:NameIndividual , :UC ;		
+            :designacao "Scripting no Processamento de Linguagem Natural" ;		
+            :anoletivo "2020/2021" .
+         
+            ### http://www.semanticweb.org/xalug/ontologies/uc#PRI
+		:PRI rdf:type owl:NameIndividual , :UC ;		
+            :designacao "Processamento e Representação de Informação" ;		
+            :anoletivo "2020/2021" .
+         
+            ### http://www.semanticweb.org/xalug/ontologies/uc#GCS
+		:GCS rdf:type owl:NameIndividual , :UC ;		
+            :designacao "Gramáticas na Compreensão de Software" ;		
+            :anoletivo "2020/2021" .
+        
+        
+            ### http://www.semanticweb.org/xalug/ontologies/uc#CSI
+		:CSI rdf:type owl:NameIndividual , :UC ;		
+            :designacao "Cálculo de Sistemas de Informação" ;		
+            :anoletivo "2020/2021" .
+        
+        
+            ### http://www.semanticweb.org/xalug/ontologies/uc#EM
+		:EM rdf:type owl:NameIndividual , :UC ;		
+            :designacao "Especificação e Modelação" ;		
+            :anoletivo "2020/2021" .
+        
+        
+            ### http://www.semanticweb.org/xalug/ontologies/uc#AC
+		:AC rdf:type owl:NameIndividual , :UC ;		
+            :designacao "Arquitetura e Cálculo" ;		
+            :anoletivo "2020/2021" .
+        
+        
+            ### http://www.semanticweb.org/xalug/ontologies/uc#VF
+		:VF rdf:type owl:NameIndividual , :UC ;		
+            :designacao "Verificação Formal" ;		
+            :anoletivo "2020/2021" .
+        
+    
 	################## DOCENTES ##################
-                    ### http://www.semanticweb.org/xalug/ontologies/uc#jcr
-		:jcr rdf:type owl:NameIndividual , :Professor ;		            :nome "José Carlos Ramalho" ;		            :ensina :PRC , :PRI .                     ### http://www.semanticweb.org/xalug/ontologies/uc#jj
-		:jj rdf:type owl:NameIndividual , :Professor ;		            :nome "José João" ;		            :ensina :SPLN .                     ### http://www.semanticweb.org/xalug/ontologies/uc#prh
-		:prh rdf:type owl:NameIndividual , :Professor ;		            :nome "Pedro Rangel Henriques" ;		            :ensina :GCS .                     ### http://www.semanticweb.org/xalug/ontologies/uc#jno
-		:jno rdf:type owl:NameIndividual , :Professor ;		            :nome "José Nuno Oliveira" ;		            :ensina :CSI .                            ### http://www.semanticweb.org/xalug/ontologies/uc#ac
-		:ac rdf:type owl:NameIndividual , :Professor ;		            :nome "Alcino Cunha" ;		            :ensina :EM .                            ### http://www.semanticweb.org/xalug/ontologies/uc#lb
-		:lb rdf:type owl:NameIndividual , :Professor ;		            :nome "Luís Barbosa" ;		            :ensina :AC .                            ### http://www.semanticweb.org/xalug/ontologies/uc#mjf
-		:mjf rdf:type owl:NameIndividual , :Professor ;		            :nome "Maria João Frade" ;		            :ensina :VF .            
+
+        
+            ### http://www.semanticweb.org/xalug/ontologies/uc#jcr
+		:jcr rdf:type owl:NameIndividual , :Professor ;		
+            :nome "José Carlos Ramalho" ;		
+            :ensina :PRC , :PRI .
+         
+            ### http://www.semanticweb.org/xalug/ontologies/uc#jj
+		:jj rdf:type owl:NameIndividual , :Professor ;		
+            :nome "José João" ;		
+            :ensina :SPLN .
+         
+            ### http://www.semanticweb.org/xalug/ontologies/uc#prh
+		:prh rdf:type owl:NameIndividual , :Professor ;		
+            :nome "Pedro Rangel Henriques" ;		
+            :ensina :GCS .
+         
+            ### http://www.semanticweb.org/xalug/ontologies/uc#jno
+		:jno rdf:type owl:NameIndividual , :Professor ;		
+            :nome "José Nuno Oliveira" ;		
+            :ensina :CSI .
+        
+        
+            ### http://www.semanticweb.org/xalug/ontologies/uc#ac
+		:ac rdf:type owl:NameIndividual , :Professor ;		
+            :nome "Alcino Cunha" ;		
+            :ensina :EM .
+        
+        
+            ### http://www.semanticweb.org/xalug/ontologies/uc#lb
+		:lb rdf:type owl:NameIndividual , :Professor ;		
+            :nome "Luís Barbosa" ;		
+            :ensina :AC .
+        
+        
+            ### http://www.semanticweb.org/xalug/ontologies/uc#mjf
+		:mjf rdf:type owl:NameIndividual , :Professor ;		
+            :nome "Maria João Frade" ;		
+            :ensina :VF .
+        
+    
 	################## ALUNOS ##################
-                      ### http://www.semanticweb.org/xalug/ontologies/uc#A85786
-		:A85786 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Mcbride Winters" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84852
-		:A84852 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Houston Evans" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84515
-		:A84515 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Chambers Fitzgerald" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84560
-		:A84560 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Pollard Fox" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84931
-		:A84931 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Allison Summers" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85300
-		:A85300 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Sellers Murray" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84916
-		:A84916 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Puckett Santiago" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85633
-		:A85633 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Kirby Little" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84748
-		:A84748 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Maryellen Hartman" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84822
-		:A84822 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Dorthy Schroeder" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85343
-		:A85343 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Catherine Holland" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84710
-		:A84710 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Noble Townsend" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84422
-		:A84422 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Cervantes Hickman" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85026
-		:A85026 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Edna Salinas" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84411
-		:A84411 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Farmer Ray" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84390
-		:A84390 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Clay Koch" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85574
-		:A85574 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Lola Benson" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85458
-		:A85458 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Jean Tyler" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85070
-		:A85070 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Brigitte Solomon" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85056
-		:A85056 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Howell Woodard" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85913
-		:A85913 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Delores Boyer" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84180
-		:A84180 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Leach Santana" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85880
-		:A85880 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Castaneda Sharp" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85216
-		:A85216 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Dominique Boyd" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85555
-		:A85555 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Decker Mccarthy" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84359
-		:A84359 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Amparo Pittman" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84244
-		:A84244 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Curry Torres" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84722
-		:A84722 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Lottie Mcknight" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84883
-		:A84883 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Natalia Pope" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84181
-		:A84181 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Melody Washington" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85150
-		:A85150 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Guzman Branch" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85801
-		:A85801 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Kaye Yang" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85261
-		:A85261 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Celia Mack" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85313
-		:A85313 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Lynette Colon" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85576
-		:A85576 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Mabel Figueroa" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84339
-		:A84339 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Patsy Wolf" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84610
-		:A84610 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Deidre Donaldson" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84084
-		:A84084 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Jimenez Giles" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84429
-		:A84429 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Weber Pugh" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84820
-		:A84820 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Aurora Cross" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85585
-		:A85585 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Liza Mccall" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85837
-		:A85837 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Jody Hopkins" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85322
-		:A85322 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Alston Nolan" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85240
-		:A85240 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Riggs Guthrie" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85633
-		:A85633 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Mary Christensen" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84268
-		:A84268 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Mcneil Cannon" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84212
-		:A84212 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Morgan Fernandez" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85296
-		:A85296 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Lela Levine" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84974
-		:A84974 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Iva Leblanc" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84674
-		:A84674 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Fry Rush" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84604
-		:A84604 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Bridgette Dixon" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84502
-		:A84502 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Mckee Molina" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84400
-		:A84400 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Charlotte Mayer" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85432
-		:A85432 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Muriel Perkins" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85165
-		:A85165 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Krystal Vance" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84287
-		:A84287 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Dudley Terry" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85273
-		:A85273 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Willie Dawson" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85597
-		:A85597 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Anne Rosales" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85057
-		:A85057 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Rachael Tillman" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84143
-		:A84143 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Foster Kerr" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84023
-		:A84023 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Eloise Mendoza" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84194
-		:A84194 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Benton Vinson" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85740
-		:A85740 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Josie Vega" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84673
-		:A84673 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Sondra Oconnor" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84757
-		:A84757 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Dianne Mcfadden" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85847
-		:A85847 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Christensen Adkins" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84098
-		:A84098 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Shannon Compton" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84353
-		:A84353 rdf:type owl:NameIndividual , :Aluno ;		            :nome "John Finch" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85387
-		:A85387 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Melba Newman" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85346
-		:A85346 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Craig King" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84573
-		:A84573 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Dora Mcfarland" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84580
-		:A84580 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Doris Farrell" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85948
-		:A85948 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Sandy Duncan" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85595
-		:A85595 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Jo Brady" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84509
-		:A84509 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Lourdes Lee" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84021
-		:A84021 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Claudette Buckley" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84144
-		:A84144 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Lorrie Whitney" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85260
-		:A85260 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Fowler Harris" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84427
-		:A84427 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Latonya Beard" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84548
-		:A84548 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Dunlap Daniel" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85085
-		:A85085 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Santiago Ramsey" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84390
-		:A84390 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Krista Goodwin" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84219
-		:A84219 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Welch Cameron" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85202
-		:A85202 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Aimee Christian" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85355
-		:A85355 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Quinn Meadows" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84125
-		:A84125 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Noelle Mcguire" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84669
-		:A84669 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Bailey Head" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84210
-		:A84210 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Barry Dale" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84526
-		:A84526 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Coffey Marshall" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84670
-		:A84670 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Staci Gonzalez" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85859
-		:A85859 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Cherie Acevedo" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84149
-		:A84149 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Althea Hicks" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85474
-		:A85474 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Vega Hooper" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84616
-		:A84616 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Avery Mays" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85960
-		:A85960 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Pitts Ballard" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85166
-		:A85166 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Cassie May" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84505
-		:A84505 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Bernadette Mcclain" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85512
-		:A85512 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Griffin Nieves" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84444
-		:A84444 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Spears Nunez" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85921
-		:A85921 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Copeland Sosa" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84500
-		:A84500 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Salazar Weber" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84470
-		:A84470 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Allen Vang" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84145
-		:A84145 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Hebert Salas" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85123
-		:A85123 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Tamra Pruitt" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85981
-		:A85981 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Alexis Bond" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85601
-		:A85601 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Kaitlin Richardson" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85181
-		:A85181 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Reilly Rosario" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85527
-		:A85527 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Solomon Levy" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84500
-		:A84500 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Mcfadden Hayden" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85387
-		:A85387 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Kerri Waller" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84051
-		:A84051 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Amelia Swanson" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84441
-		:A84441 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Tanisha Byrd" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85071
-		:A85071 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Frieda Cervantes" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85293
-		:A85293 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Helene Rogers" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85555
-		:A85555 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Yang Stokes" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84948
-		:A84948 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Bauer Battle" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84043
-		:A84043 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Palmer Sampson" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84761
-		:A84761 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Geraldine Garner" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85389
-		:A85389 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Gwendolyn Price" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85621
-		:A85621 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Loraine Gould" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84792
-		:A84792 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Blackburn Blackburn" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84279
-		:A84279 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Mcclain Massey" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84475
-		:A84475 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Marina Beasley" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84459
-		:A84459 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Marisa Tate" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85228
-		:A85228 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Margo Bryan" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85699
-		:A85699 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Jolene Frazier" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85697
-		:A85697 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Schmidt Young" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84691
-		:A84691 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Leann Mcmillan" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85824
-		:A85824 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Rodriguez Kline" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84859
-		:A84859 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Pamela Sargent" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84482
-		:A84482 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Mcdonald Knowles" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85252
-		:A85252 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Barton Kirk" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85634
-		:A85634 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Melton Walters" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85889
-		:A85889 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Agnes Avila" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85592
-		:A85592 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Hazel Richmond" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85350
-		:A85350 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Conner Norman" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85102
-		:A85102 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Vazquez Lambert" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84779
-		:A84779 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Alba Wilson" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85319
-		:A85319 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Johanna Buck" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85322
-		:A85322 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Margie Navarro" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85480
-		:A85480 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Vera Daugherty" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84753
-		:A84753 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Nelson Hardy" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84470
-		:A84470 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Carrillo Eaton" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85117
-		:A85117 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Price Shaffer" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84979
-		:A84979 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Hester Cohen" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84792
-		:A84792 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Kennedy Stewart" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84732
-		:A84732 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Francine Davenport" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85781
-		:A85781 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Edwards Mason" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85850
-		:A85850 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Golden Benton" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84259
-		:A84259 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Alford Snyder" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84528
-		:A84528 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Hines Grant" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84484
-		:A84484 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Carla Wade" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84676
-		:A84676 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Sampson Coleman" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84751
-		:A84751 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Tammy Shaw" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85868
-		:A85868 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Kathie Hawkins" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84839
-		:A84839 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Alice Gamble" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85789
-		:A85789 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Denise Greene" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84698
-		:A84698 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Bernice Vaughan" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85414
-		:A85414 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Brenda Horne" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84464
-		:A84464 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Rosalie Moses" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85906
-		:A85906 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Rodriquez Lang" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85158
-		:A85158 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Sexton Romero" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84285
-		:A84285 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Eaton Cooke" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84102
-		:A84102 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Munoz Gregory" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84222
-		:A84222 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Butler Gillespie" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85970
-		:A85970 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Jefferson Rowe" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85129
-		:A85129 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Marla Glover" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85386
-		:A85386 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Sharlene Schultz" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84083
-		:A84083 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Lenora Hogan" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84328
-		:A84328 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Hood Black" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85287
-		:A85287 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Nolan Faulkner" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85021
-		:A85021 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Horne Matthews" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84082
-		:A84082 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Colleen Turner" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84121
-		:A84121 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Aida Wolfe" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85393
-		:A85393 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Shaw Everett" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84119
-		:A84119 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Guy Lowe" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85073
-		:A85073 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Katie Chambers" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85130
-		:A85130 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Robyn Dunn" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85310
-		:A85310 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Mcclure Henson" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84332
-		:A84332 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Patti Logan" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84426
-		:A84426 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Effie Bennett" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85853
-		:A85853 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Reid West" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84867
-		:A84867 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Anita Bass" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84901
-		:A84901 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Lara Hampton" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84695
-		:A84695 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Kristy Kaufman" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85645
-		:A85645 rdf:type owl:NameIndividual , :Aluno ;		            :nome "King Moore" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85899
-		:A85899 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Green Sparks" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85441
-		:A85441 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Tracie Hensley" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84262
-		:A84262 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Montoya Ellison" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85821
-		:A85821 rdf:type owl:NameIndividual , :Aluno ;		            :nome "David Daniels" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85439
-		:A85439 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Mercedes Cox" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84045
-		:A84045 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Becky Gray" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84376
-		:A84376 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Byers Hodges" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84007
-		:A84007 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Sheena Patrick" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84312
-		:A84312 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Susana Mckinney" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85385
-		:A85385 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Katina Weeks" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84845
-		:A84845 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Lilly Barrera" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A84941
-		:A84941 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Frank Brennan" ;		            :frequenta :GCS , :PRC , :PRI , :SPLN .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85665
-		:A85665 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Della Leon" ;		            :frequenta :CSI , :EM , :VF , :AC .                                ### http://www.semanticweb.org/xalug/ontologies/uc#A85022
-		:A85022 rdf:type owl:NameIndividual , :Aluno ;		            :nome "Anna Madden" ;		            :frequenta :CSI , :EM , :VF , :AC .              
+
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85786
+		:A85786 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Mcbride Winters" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84852
+		:A84852 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Houston Evans" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84515
+		:A84515 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Chambers Fitzgerald" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84560
+		:A84560 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Pollard Fox" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84931
+		:A84931 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Allison Summers" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85300
+		:A85300 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Sellers Murray" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84916
+		:A84916 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Puckett Santiago" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85633
+		:A85633 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Kirby Little" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84748
+		:A84748 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Maryellen Hartman" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84822
+		:A84822 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Dorthy Schroeder" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85343
+		:A85343 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Catherine Holland" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84710
+		:A84710 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Noble Townsend" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84422
+		:A84422 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Cervantes Hickman" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85026
+		:A85026 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Edna Salinas" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84411
+		:A84411 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Farmer Ray" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84390
+		:A84390 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Clay Koch" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85574
+		:A85574 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Lola Benson" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85458
+		:A85458 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Jean Tyler" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85070
+		:A85070 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Brigitte Solomon" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85056
+		:A85056 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Howell Woodard" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85913
+		:A85913 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Delores Boyer" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84180
+		:A84180 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Leach Santana" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85880
+		:A85880 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Castaneda Sharp" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85216
+		:A85216 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Dominique Boyd" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85555
+		:A85555 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Decker Mccarthy" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84359
+		:A84359 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Amparo Pittman" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84244
+		:A84244 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Curry Torres" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84722
+		:A84722 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Lottie Mcknight" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84883
+		:A84883 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Natalia Pope" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84181
+		:A84181 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Melody Washington" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85150
+		:A85150 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Guzman Branch" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85801
+		:A85801 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Kaye Yang" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85261
+		:A85261 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Celia Mack" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85313
+		:A85313 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Lynette Colon" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85576
+		:A85576 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Mabel Figueroa" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84339
+		:A84339 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Patsy Wolf" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84610
+		:A84610 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Deidre Donaldson" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84084
+		:A84084 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Jimenez Giles" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84429
+		:A84429 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Weber Pugh" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84820
+		:A84820 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Aurora Cross" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85585
+		:A85585 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Liza Mccall" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85837
+		:A85837 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Jody Hopkins" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85322
+		:A85322 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Alston Nolan" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85240
+		:A85240 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Riggs Guthrie" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85633
+		:A85633 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Mary Christensen" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84268
+		:A84268 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Mcneil Cannon" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84212
+		:A84212 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Morgan Fernandez" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85296
+		:A85296 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Lela Levine" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84974
+		:A84974 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Iva Leblanc" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84674
+		:A84674 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Fry Rush" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84604
+		:A84604 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Bridgette Dixon" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84502
+		:A84502 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Mckee Molina" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84400
+		:A84400 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Charlotte Mayer" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85432
+		:A85432 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Muriel Perkins" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85165
+		:A85165 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Krystal Vance" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84287
+		:A84287 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Dudley Terry" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85273
+		:A85273 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Willie Dawson" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85597
+		:A85597 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Anne Rosales" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85057
+		:A85057 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Rachael Tillman" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84143
+		:A84143 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Foster Kerr" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84023
+		:A84023 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Eloise Mendoza" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84194
+		:A84194 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Benton Vinson" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85740
+		:A85740 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Josie Vega" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84673
+		:A84673 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Sondra Oconnor" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84757
+		:A84757 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Dianne Mcfadden" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85847
+		:A85847 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Christensen Adkins" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84098
+		:A84098 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Shannon Compton" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84353
+		:A84353 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "John Finch" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85387
+		:A85387 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Melba Newman" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85346
+		:A85346 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Craig King" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84573
+		:A84573 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Dora Mcfarland" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84580
+		:A84580 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Doris Farrell" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85948
+		:A85948 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Sandy Duncan" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85595
+		:A85595 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Jo Brady" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84509
+		:A84509 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Lourdes Lee" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84021
+		:A84021 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Claudette Buckley" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84144
+		:A84144 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Lorrie Whitney" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85260
+		:A85260 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Fowler Harris" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84427
+		:A84427 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Latonya Beard" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84548
+		:A84548 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Dunlap Daniel" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85085
+		:A85085 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Santiago Ramsey" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84390
+		:A84390 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Krista Goodwin" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84219
+		:A84219 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Welch Cameron" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85202
+		:A85202 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Aimee Christian" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85355
+		:A85355 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Quinn Meadows" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84125
+		:A84125 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Noelle Mcguire" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84669
+		:A84669 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Bailey Head" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84210
+		:A84210 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Barry Dale" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84526
+		:A84526 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Coffey Marshall" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84670
+		:A84670 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Staci Gonzalez" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85859
+		:A85859 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Cherie Acevedo" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84149
+		:A84149 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Althea Hicks" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85474
+		:A85474 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Vega Hooper" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84616
+		:A84616 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Avery Mays" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85960
+		:A85960 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Pitts Ballard" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85166
+		:A85166 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Cassie May" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84505
+		:A84505 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Bernadette Mcclain" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85512
+		:A85512 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Griffin Nieves" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84444
+		:A84444 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Spears Nunez" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85921
+		:A85921 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Copeland Sosa" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84500
+		:A84500 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Salazar Weber" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84470
+		:A84470 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Allen Vang" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84145
+		:A84145 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Hebert Salas" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85123
+		:A85123 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Tamra Pruitt" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85981
+		:A85981 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Alexis Bond" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85601
+		:A85601 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Kaitlin Richardson" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85181
+		:A85181 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Reilly Rosario" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85527
+		:A85527 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Solomon Levy" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84500
+		:A84500 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Mcfadden Hayden" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85387
+		:A85387 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Kerri Waller" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84051
+		:A84051 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Amelia Swanson" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84441
+		:A84441 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Tanisha Byrd" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85071
+		:A85071 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Frieda Cervantes" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85293
+		:A85293 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Helene Rogers" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85555
+		:A85555 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Yang Stokes" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84948
+		:A84948 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Bauer Battle" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84043
+		:A84043 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Palmer Sampson" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84761
+		:A84761 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Geraldine Garner" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85389
+		:A85389 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Gwendolyn Price" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85621
+		:A85621 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Loraine Gould" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84792
+		:A84792 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Blackburn Blackburn" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84279
+		:A84279 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Mcclain Massey" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84475
+		:A84475 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Marina Beasley" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84459
+		:A84459 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Marisa Tate" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85228
+		:A85228 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Margo Bryan" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85699
+		:A85699 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Jolene Frazier" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85697
+		:A85697 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Schmidt Young" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84691
+		:A84691 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Leann Mcmillan" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85824
+		:A85824 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Rodriguez Kline" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84859
+		:A84859 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Pamela Sargent" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84482
+		:A84482 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Mcdonald Knowles" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85252
+		:A85252 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Barton Kirk" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85634
+		:A85634 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Melton Walters" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85889
+		:A85889 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Agnes Avila" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85592
+		:A85592 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Hazel Richmond" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85350
+		:A85350 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Conner Norman" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85102
+		:A85102 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Vazquez Lambert" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84779
+		:A84779 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Alba Wilson" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85319
+		:A85319 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Johanna Buck" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85322
+		:A85322 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Margie Navarro" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85480
+		:A85480 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Vera Daugherty" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84753
+		:A84753 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Nelson Hardy" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84470
+		:A84470 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Carrillo Eaton" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85117
+		:A85117 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Price Shaffer" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84979
+		:A84979 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Hester Cohen" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84792
+		:A84792 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Kennedy Stewart" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84732
+		:A84732 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Francine Davenport" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85781
+		:A85781 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Edwards Mason" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85850
+		:A85850 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Golden Benton" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84259
+		:A84259 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Alford Snyder" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84528
+		:A84528 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Hines Grant" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84484
+		:A84484 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Carla Wade" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84676
+		:A84676 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Sampson Coleman" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84751
+		:A84751 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Tammy Shaw" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85868
+		:A85868 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Kathie Hawkins" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84839
+		:A84839 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Alice Gamble" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85789
+		:A85789 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Denise Greene" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84698
+		:A84698 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Bernice Vaughan" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85414
+		:A85414 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Brenda Horne" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84464
+		:A84464 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Rosalie Moses" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85906
+		:A85906 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Rodriquez Lang" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85158
+		:A85158 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Sexton Romero" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84285
+		:A84285 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Eaton Cooke" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84102
+		:A84102 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Munoz Gregory" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84222
+		:A84222 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Butler Gillespie" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85970
+		:A85970 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Jefferson Rowe" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85129
+		:A85129 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Marla Glover" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85386
+		:A85386 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Sharlene Schultz" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84083
+		:A84083 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Lenora Hogan" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84328
+		:A84328 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Hood Black" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85287
+		:A85287 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Nolan Faulkner" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85021
+		:A85021 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Horne Matthews" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84082
+		:A84082 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Colleen Turner" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84121
+		:A84121 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Aida Wolfe" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85393
+		:A85393 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Shaw Everett" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84119
+		:A84119 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Guy Lowe" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85073
+		:A85073 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Katie Chambers" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85130
+		:A85130 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Robyn Dunn" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85310
+		:A85310 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Mcclure Henson" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84332
+		:A84332 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Patti Logan" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84426
+		:A84426 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Effie Bennett" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85853
+		:A85853 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Reid West" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84867
+		:A84867 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Anita Bass" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84901
+		:A84901 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Lara Hampton" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84695
+		:A84695 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Kristy Kaufman" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85645
+		:A85645 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "King Moore" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85899
+		:A85899 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Green Sparks" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85441
+		:A85441 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Tracie Hensley" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84262
+		:A84262 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Montoya Ellison" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85821
+		:A85821 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "David Daniels" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85439
+		:A85439 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Mercedes Cox" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84045
+		:A84045 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Becky Gray" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84376
+		:A84376 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Byers Hodges" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84007
+		:A84007 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Sheena Patrick" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84312
+		:A84312 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Susana Mckinney" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85385
+		:A85385 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Katina Weeks" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84845
+		:A84845 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Lilly Barrera" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A84941
+		:A84941 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Frank Brennan" ;		
+            :frequenta :GCS , :PRC , :PRI , :SPLN .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85665
+		:A85665 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Della Leon" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+          
+            ### http://www.semanticweb.org/xalug/ontologies/uc#A85022
+		:A85022 rdf:type owl:NameIndividual , :Aluno ;		
+            :nome "Anna Madden" ;		
+            :frequenta :CSI , :EM , :VF , :AC .
+          
+    

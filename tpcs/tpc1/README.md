@@ -6,5 +6,5 @@
     - *> ./a.out < ./database/db.json >> result.ttl*
     - Temos outras operações de rm para facilitar a limpeza da pasta. Sempre que o script é corrido, é criado um novo ficheiro *result.ttl*
 
-- O resultado irá ser adicionado ao ficheiro *template.ttl* na secção ***INDIVIDUALS***, como *append*.
+- O resultado irá ser adicionado ao ficheiro *result.ttl* na secção ***INDIVIDUALS***, como *append*.
 - No ficheiro *result.ttl*, podemos encontrar uma versão após correr o script de preenchimento do *template.ttl*.
