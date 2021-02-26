@@ -10,34 +10,33 @@
 Abrev ER
 
 %%
-\{                    {printf("\n\t################## UCS ##################\n");}
+\{                    {printf("\n################## UCS ##################\n");}
 \"ucs\"\:[ ]\[	      {BEGIN UCS;}
 \"docentes\"\:[ ]\[		{BEGIN DOC;}
 \"alunos\"\:[ ]\[		  {BEGIN ALUNOS;}
 <UCS>{
   \{              {BEGIN OBJU;}
   <OBJU>{
-    \"id\"\:[ ]\"[^\"]*/\"\,              {
-                                            printf("### http://www.semanticweb.org/xalug/ontologies/uc#%s", yytext+7);
-                                            printf("\n\t\t");
-                                            printf(":%s rdf:type owl:NameIndividual , :UC ;\t\t",yytext+7);
-                                          }
-    \"designacao\"\:[ ]\"[^\"]*\"/\,     {printf(":designacao %s ;\t\t",yytext+14);}
+    \"id\"\:[ ]\"[^\"]*/\"\,             {
+                                            printf("### http://www.semanticweb.org/xalug/ontologies/uc#%s\n", yytext+7);
+                                            printf("            :%s rdf:type owl:NameIndividual , :UC ;",yytext+7);
+                                         }
+    \"designacao\"\:[ ]\"[^\"]*\"/\,     {printf(":designacao %s ;",yytext+14);}
     \"anoLetivo\"\:[ ]\"[^\"]*\"         {printf(":anoletivo %s .",yytext+13);}
     \}                                   {BEGIN UCS;}
     \,|\n|\"                             ;
   }
-  \]              {BEGIN 0;printf("\n\t################## DOCENTES ##################\n");}
+  \]              {BEGIN 0;printf("\n################## DOCENTES ##################\n");}
 }
 <DOC>{
   \{              {BEGIN OBJD;}
   <OBJD>{
     \"id\"\:[ ]\"[^\"]*/\"\,              {
                                             printf("### http://www.semanticweb.org/xalug/ontologies/uc#%s", yytext+7);
-                                            printf("\n\t\t");
-                                            printf(":%s rdf:type owl:NameIndividual , :Professor ;\t\t",yytext+7);
+                                            printf("\n");
+                                            printf("            :%s rdf:type owl:NameIndividual , :Professor ;",yytext+7);
                                           }
-    \"nome\"\:[ ]\"[^\"]*\"/\,            {printf(":nome %s ;\t\t",yytext+8);}
+    \"nome\"\:[ ]\"[^\"]*\"/\,            {printf(":nome %s ;",yytext+8);}
     \"ensina\"\:[ ]\"[^\"]*/\"            {
                                             printf(":ensina ");
                                             char* ucs_profs[4];
@@ -72,17 +71,17 @@ Abrev ER
     \}                                    {BEGIN DOC;}
     \,|\n|\"                              ;
   }
-  \]              {BEGIN 0;printf("\n\t################## ALUNOS ##################\n");}
+  \]              {BEGIN 0;printf("\n################## ALUNOS ##################\n");}
 }
 <ALUNOS>{
   \{              {BEGIN OBJA;}
   <OBJA>{
-    \"id\"\:[ ]\"[^\"]*/\"\,              { 
+    \"id\"\:[ ]\"[^\"]*/\"\,              {
                                             printf("### http://www.semanticweb.org/xalug/ontologies/uc#%s", yytext+7);
-                                            printf("\n\t\t");
-                                            printf(":%s rdf:type owl:NameIndividual , :Aluno ;\t\t",yytext+7);
+                                            printf("\n");
+                                            printf("            :%s rdf:type owl:NameIndividual , :Aluno ;",yytext+7);
                                           }
-    \"nome\"\:[ ]\"[^\"]*\"/\,            {printf(":nome %s ;\t\t",yytext+8);} 
+    \"nome\"\:[ ]\"[^\"]*\"/\,            {printf(":nome %s ;",yytext+8);}
     \"estuda\"\:[ ]\"[^\"]*/\"            {
                                             printf(":frequenta ");
                                             char* ucs_alunos[4];
@@ -110,7 +109,7 @@ Abrev ER
                                               printf(":%s ", ucs_alunos[3]);
                                             }
                                             printf(".");
-                                          }                                  
+                                          }
     \}                                    {BEGIN ALUNOS;}
     \,|\n|\"                              ;
   }
