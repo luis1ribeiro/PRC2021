@@ -1,0 +1,334 @@
+@prefix : <http://www.semanticweb.org/prc2021/cinema/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/prc2021/cinema/v1> .
+
+<http://www.semanticweb.org/prc2021/cinema/v1> rdf:type owl:Ontology ;
+                                                owl:versionIRI <http://www.semanticweb.org/prc2021/cinema/v1> ;
+                                                rdfs:comment "Ontologias sobre cinemas." .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#atuou
+:atuou rdf:type owl:ObjectProperty ;
+       owl:inverseOf :temAtor ;
+       rdfs:domain :Pessoa ;
+       rdfs:range :Filme .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#compôs
+:compôs rdf:type owl:ObjectProperty ;
+        owl:inverseOf :foiComposta ;
+        rdfs:domain :Pessoa ;
+        rdfs:range :PeçaMusical .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#escreveu
+:escreveu rdf:type owl:ObjectProperty ;
+          owl:inverseOf :foiEscrita ;
+          rdfs:domain :Pessoa .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#foiComposta
+:foiComposta rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#foiEscrita
+:foiEscrita rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#realizou
+:realizou rdf:type owl:ObjectProperty ;
+          owl:inverseOf :temRealizador .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#temArgumento
+:temArgumento rdf:type owl:ObjectProperty ;
+              rdfs:domain :Filme ;
+              rdfs:range :Argumento .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#temAtor
+:temAtor rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#temGénero
+:temGénero rdf:type owl:ObjectProperty ;
+           rdfs:range :Género .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#temLíngua
+:temLíngua rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#temPaísOrigem
+:temPaísOrigem rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#temPeçaMusical
+:temPeçaMusical rdf:type owl:ObjectProperty ;
+                rdfs:domain :Filme ;
+                rdfs:range :PeçaMusical .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#temRealizador
+:temRealizador rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Filme ;
+               rdfs:range :Pessoa .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#sexo
+:sexo rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#temData
+:temData rdf:type owl:DatatypeProperty ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#temDuração
+:temDuração rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#temTítulo
+:temTítulo rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#Argumento
+:Argumento rdf:type owl:Class ;
+           rdfs:subClassOf :Obra .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#Ator
+:Ator rdf:type owl:Class ;
+      owl:equivalentClass [ owl:intersectionOf ( :Pessoa
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :atuou ;
+                                                   owl:someValuesFrom :Filme
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#AtoresFemininos
+:AtoresFemininos rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( :Ator
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :sexo ;
+                                                              owl:hasValue "F"
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#AtoresMasculinos
+:AtoresMasculinos rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( :Ator
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :sexo ;
+                                                               owl:hasValue "M"
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#Escritor
+:Escritor rdf:type owl:Class ;
+          owl:equivalentClass [ owl:intersectionOf ( :Pessoa
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :escreveu ;
+                                                       owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                            owl:unionOf ( :Argumento
+                                                                                          :Livro
+                                                                                        )
+                                                                          ]
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#Filme
+:Filme rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :temData ;
+                         owl:someValuesFrom xsd:string
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :temDuração ;
+                         owl:someValuesFrom xsd:int
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :temTítulo ;
+                         owl:someValuesFrom xsd:string
+                       ] .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#Género
+:Género rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#Livro
+:Livro rdf:type owl:Class ;
+       rdfs:subClassOf :Obra .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#Língua
+:Língua rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#Músico
+:Músico rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :Pessoa
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :compôs ;
+                                                     owl:someValuesFrom :PeçaMusical
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#Obra
+:Obra rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#País
+:País rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#Pessoa
+:Pessoa rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#PeçaMusical
+:PeçaMusical rdf:type owl:Class ;
+             rdfs:subClassOf :Obra .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#Realizador
+:Realizador rdf:type owl:Class ;
+            owl:equivalentClass [ owl:intersectionOf ( :Pessoa
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :realizou ;
+                                                         owl:someValuesFrom :Filme
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#ArgumentoTwilight
+:ArgumentoTwilight rdf:type owl:NamedIndividual ,
+                            :Argumento .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#BillyBurke
+:BillyBurke rdf:type owl:NamedIndividual ,
+                     :Pessoa ;
+            :atuou :Twilight ;
+            :sexo "M"^^xsd:string .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#Catherine_Hardwicke
+:Catherine_Hardwicke rdf:type owl:NamedIndividual ,
+                              :Pessoa ;
+                     :realizou :Twilight ;
+                     :sexo "F"^^xsd:string .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#EN
+:EN rdf:type owl:NamedIndividual ,
+             :Língua .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#EstadosUnidos
+:EstadosUnidos rdf:type owl:NamedIndividual ,
+                        :País .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#FR
+:FR rdf:type owl:NamedIndividual ,
+             :Língua .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#França
+:França rdf:type owl:NamedIndividual ,
+                 :País .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#Inglaterra
+:Inglaterra rdf:type owl:NamedIndividual ,
+                     :País .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#KristenStewart
+:KristenStewart rdf:type owl:NamedIndividual ,
+                         :Pessoa ;
+                :atuou :Twilight ;
+                :sexo "F"^^xsd:string .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#MelissaRosenberg
+:MelissaRosenberg rdf:type owl:NamedIndividual ,
+                           :Pessoa ;
+                  :escreveu :ArgumentoTwilight ;
+                  :sexo "F"^^xsd:string .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#PT
+:PT rdf:type owl:NamedIndividual ,
+             :Língua .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#Portugal
+:Portugal rdf:type owl:NamedIndividual ,
+                   :País .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#RobertPattinson
+:RobertPattinson rdf:type owl:NamedIndividual ,
+                          :Pessoa ;
+                 :atuou :Twilight ;
+                 :sexo "M"^^xsd:string .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#TaylorLautner
+:TaylorLautner rdf:type owl:NamedIndividual ,
+                        :Pessoa ;
+               :atuou :Twilight ;
+               :sexo "M"^^xsd:string .
+
+
+###  http://www.semanticweb.org/prc2021/cinema/v1#Twilight
+:Twilight rdf:type owl:NamedIndividual ,
+                   :Filme ;
+          :temArgumento :ArgumentoTwilight ;
+          :temData "2008-12-19"^^xsd:string ;
+          :temDuração "122"^^xsd:int ;
+          :temTítulo "Twilight"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
