@@ -29,11 +29,11 @@
 :foiComposta rdf:type owl:ObjectProperty .
 
 
-###  http://www.di.uminho.pt/prc2021/amd#referenteA
-:referenteA rdf:type owl:ObjectProperty ;
-            owl:inverseOf :segueaPartitura ;
-            rdfs:domain :Partitura ;
-            rdfs:range :Instrumento .
+###  http://www.di.uminho.pt/prc2021/amd#pertence
+:pertence rdf:type owl:ObjectProperty ;
+          owl:inverseOf :segueaPartitura ;
+          rdfs:domain :Partitura ;
+          rdfs:range :Instrumento .
 
 
 ###  http://www.di.uminho.pt/prc2021/amd#segueaPartitura
@@ -144,7 +144,7 @@
 ###  http://www.di.uminho.pt/prc2021/amd#Partitura
 :Partitura rdf:type owl:Class ;
            rdfs:subClassOf [ rdf:type owl:Restriction ;
-                             owl:onProperty :referenteA ;
+                             owl:onProperty :pertence ;
                              owl:someValuesFrom :Instrumento
                            ] .
 
@@ -163,7 +163,7 @@
 ###  http://www.di.uminho.pt/prc2021/amd#HomenagemJSerra-clarinete1.pdf
 :HomenagemJSerra-clarinete1.pdf rdf:type owl:NamedIndividual ,
                                          :Partitura ;
-                                :referenteA :Clarinete ;
+                                :pertence :Clarinete ;
                                 :path "HomenagemJSerra-clarinete1.pdf" ;
                                 :type "PDF" ;
                                 :voz "I" .

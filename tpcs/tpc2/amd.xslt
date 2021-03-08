@@ -22,9 +22,7 @@
     </xsl:if>
     <xsl:if test="arranjo">
       ; :arranjo "<xsl:value-of select="arranjo"/>"
-    </xsl:if>
-    .
-    # --------------------------------------------------
+    </xsl:if> .
   
 
     <xsl:if test="compositor">
@@ -36,7 +34,6 @@
         :Compositor ;
         :nome "<xsl:sequence select="replace(.,' ','')"/>" ;
         :compôs :<xsl:value-of select="$myId"/>  .
-        # --------------------------------------------------
       </xsl:for-each>
     </xsl:if>
     
@@ -50,7 +47,6 @@
         :Compositor ;
         :nome "<xsl:sequence select="replace(.,' ','')"/>" ;
         :compositorArranjoDe :<xsl:value-of select="$myId"/>  .
-        # --------------------------------------------------
       </xsl:for-each>
     </xsl:if>
 
@@ -61,14 +57,13 @@
       :Instrumento ;
       :designação "<xsl:value-of select="designacao"/>" ;
       :éInstrumentoDe :<xsl:value-of select="../../@id"/> .
-      # --------------------------------------------------
 
 
       <xsl:for-each select="partitura">
         ### http://www.di.uminho.pt/prc2021/amd#<xsl:value-of select="@path"/>
         :<xsl:value-of select="@path"/> rdf:type owl:NamedIndividual ,
         :Partitura ;
-        :referenteA :<xsl:value-of select="replace(../designacao,' ','')"/> ;
+        :pertence :<xsl:value-of select="replace(../designacao,' ','')"/> ;
         :path "<xsl:value-of select="@path"/>" ;
         :type "<xsl:value-of select="@type"/>" 
         <xsl:if test="@afinacao">
@@ -79,9 +74,7 @@
         </xsl:if>
         <xsl:if test="@voz">
           ; :voz "<xsl:value-of select="@voz"/>" 
-        </xsl:if>
-        .
-        # --------------------------------------------------
+        </xsl:if> .
       </xsl:for-each>
     </xsl:for-each-group>
 
