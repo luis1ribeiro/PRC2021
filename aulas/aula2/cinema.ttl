@@ -4,79 +4,78 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/prc2021/cinema/v1> .
+@base <http://www.di.uminho.pt/prc2021/cinema-a2> .
 
-<http://www.semanticweb.org/prc2021/cinema/v1> rdf:type owl:Ontology ;
-                                                owl:versionIRI <http://www.semanticweb.org/prc2021/cinema/v1> ;
-                                                rdfs:comment "Ontologias sobre cinemas." .
+<http://www.di.uminho.pt/prc2021/cinema-a2> rdf:type owl:Ontology ;
+                                             rdfs:comment "Ontologias sobre cinemas." .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#atuou
+###  http://www.di.uminho.pt/prc2021/cinema-a2#atuou
 :atuou rdf:type owl:ObjectProperty ;
        owl:inverseOf :temAtor ;
        rdfs:domain :Pessoa ;
        rdfs:range :Filme .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#compôs
+###  http://www.di.uminho.pt/prc2021/cinema-a2#compôs
 :compôs rdf:type owl:ObjectProperty ;
         owl:inverseOf :foiComposta ;
         rdfs:domain :Pessoa ;
         rdfs:range :PeçaMusical .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#escreveu
+###  http://www.di.uminho.pt/prc2021/cinema-a2#escreveu
 :escreveu rdf:type owl:ObjectProperty ;
           owl:inverseOf :foiEscrita ;
           rdfs:domain :Pessoa .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#foiComposta
+###  http://www.di.uminho.pt/prc2021/cinema-a2#foiComposta
 :foiComposta rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#foiEscrita
+###  http://www.di.uminho.pt/prc2021/cinema-a2#foiEscrita
 :foiEscrita rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#realizou
+###  http://www.di.uminho.pt/prc2021/cinema-a2#realizou
 :realizou rdf:type owl:ObjectProperty ;
           owl:inverseOf :temRealizador .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#temArgumento
+###  http://www.di.uminho.pt/prc2021/cinema-a2#temArgumento
 :temArgumento rdf:type owl:ObjectProperty ;
               rdfs:domain :Filme ;
               rdfs:range :Argumento .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#temAtor
+###  http://www.di.uminho.pt/prc2021/cinema-a2#temAtor
 :temAtor rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#temGénero
+###  http://www.di.uminho.pt/prc2021/cinema-a2#temGénero
 :temGénero rdf:type owl:ObjectProperty ;
            rdfs:range :Género .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#temLíngua
+###  http://www.di.uminho.pt/prc2021/cinema-a2#temLíngua
 :temLíngua rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#temPaísOrigem
+###  http://www.di.uminho.pt/prc2021/cinema-a2#temPaísOrigem
 :temPaísOrigem rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#temPeçaMusical
+###  http://www.di.uminho.pt/prc2021/cinema-a2#temPeçaMusical
 :temPeçaMusical rdf:type owl:ObjectProperty ;
                 rdfs:domain :Filme ;
                 rdfs:range :PeçaMusical .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#temRealizador
+###  http://www.di.uminho.pt/prc2021/cinema-a2#temRealizador
 :temRealizador rdf:type owl:ObjectProperty ,
                         owl:FunctionalProperty ;
                rdfs:domain :Filme ;
@@ -87,21 +86,21 @@
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#sexo
+###  http://www.di.uminho.pt/prc2021/cinema-a2#sexo
 :sexo rdf:type owl:DatatypeProperty .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#temData
+###  http://www.di.uminho.pt/prc2021/cinema-a2#temData
 :temData rdf:type owl:DatatypeProperty ;
          rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#temDuração
+###  http://www.di.uminho.pt/prc2021/cinema-a2#temDuração
 :temDuração rdf:type owl:DatatypeProperty ;
             rdfs:range xsd:int .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#temTítulo
+###  http://www.di.uminho.pt/prc2021/cinema-a2#temTítulo
 :temTítulo rdf:type owl:DatatypeProperty .
 
 
@@ -109,12 +108,11 @@
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#Argumento
-:Argumento rdf:type owl:Class ;
-           rdfs:subClassOf :Obra .
+###  http://www.di.uminho.pt/prc2021/cinema-a2#Argumento
+:Argumento rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#Ator
+###  http://www.di.uminho.pt/prc2021/cinema-a2#Ator
 :Ator rdf:type owl:Class ;
       owl:equivalentClass [ owl:intersectionOf ( :Pessoa
                                                  [ rdf:type owl:Restriction ;
@@ -126,7 +124,7 @@
                           ] .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#AtoresFemininos
+###  http://www.di.uminho.pt/prc2021/cinema-a2#AtoresFemininos
 :AtoresFemininos rdf:type owl:Class ;
                  owl:equivalentClass [ owl:intersectionOf ( :Ator
                                                             [ rdf:type owl:Restriction ;
@@ -138,7 +136,7 @@
                                      ] .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#AtoresMasculinos
+###  http://www.di.uminho.pt/prc2021/cinema-a2#AtoresMasculinos
 :AtoresMasculinos rdf:type owl:Class ;
                   owl:equivalentClass [ owl:intersectionOf ( :Ator
                                                              [ rdf:type owl:Restriction ;
@@ -150,7 +148,7 @@
                                       ] .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#Escritor
+###  http://www.di.uminho.pt/prc2021/cinema-a2#Escritor
 :Escritor rdf:type owl:Class ;
           owl:equivalentClass [ owl:intersectionOf ( :Pessoa
                                                      [ rdf:type owl:Restriction ;
@@ -166,7 +164,7 @@
                               ] .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#Filme
+###  http://www.di.uminho.pt/prc2021/cinema-a2#Filme
 :Filme rdf:type owl:Class ;
        rdfs:subClassOf [ rdf:type owl:Restriction ;
                          owl:onProperty :temData ;
@@ -182,20 +180,19 @@
                        ] .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#Género
+###  http://www.di.uminho.pt/prc2021/cinema-a2#Género
 :Género rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#Livro
-:Livro rdf:type owl:Class ;
-       rdfs:subClassOf :Obra .
+###  http://www.di.uminho.pt/prc2021/cinema-a2#Livro
+:Livro rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#Língua
+###  http://www.di.uminho.pt/prc2021/cinema-a2#Língua
 :Língua rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#Músico
+###  http://www.di.uminho.pt/prc2021/cinema-a2#Músico
 :Músico rdf:type owl:Class ;
         owl:equivalentClass [ owl:intersectionOf ( :Pessoa
                                                    [ rdf:type owl:Restriction ;
@@ -207,24 +204,19 @@
                             ] .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#Obra
-:Obra rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/prc2021/cinema/v1#País
+###  http://www.di.uminho.pt/prc2021/cinema-a2#País
 :País rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#Pessoa
+###  http://www.di.uminho.pt/prc2021/cinema-a2#Pessoa
 :Pessoa rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#PeçaMusical
-:PeçaMusical rdf:type owl:Class ;
-             rdfs:subClassOf :Obra .
+###  http://www.di.uminho.pt/prc2021/cinema-a2#PeçaMusical
+:PeçaMusical rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#Realizador
+###  http://www.di.uminho.pt/prc2021/cinema-a2#Realizador
 :Realizador rdf:type owl:Class ;
             owl:equivalentClass [ owl:intersectionOf ( :Pessoa
                                                        [ rdf:type owl:Restriction ;
@@ -240,89 +232,89 @@
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#ArgumentoTwilight
+###  http://www.di.uminho.pt/prc2021/cinema-a2#ArgumentoTwilight
 :ArgumentoTwilight rdf:type owl:NamedIndividual ,
                             :Argumento .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#BillyBurke
+###  http://www.di.uminho.pt/prc2021/cinema-a2#BillyBurke
 :BillyBurke rdf:type owl:NamedIndividual ,
                      :Pessoa ;
             :atuou :Twilight ;
             :sexo "M"^^xsd:string .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#Catherine_Hardwicke
+###  http://www.di.uminho.pt/prc2021/cinema-a2#Catherine_Hardwicke
 :Catherine_Hardwicke rdf:type owl:NamedIndividual ,
                               :Pessoa ;
                      :realizou :Twilight ;
                      :sexo "F"^^xsd:string .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#EN
+###  http://www.di.uminho.pt/prc2021/cinema-a2#EN
 :EN rdf:type owl:NamedIndividual ,
              :Língua .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#EstadosUnidos
+###  http://www.di.uminho.pt/prc2021/cinema-a2#EstadosUnidos
 :EstadosUnidos rdf:type owl:NamedIndividual ,
                         :País .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#FR
+###  http://www.di.uminho.pt/prc2021/cinema-a2#FR
 :FR rdf:type owl:NamedIndividual ,
              :Língua .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#França
+###  http://www.di.uminho.pt/prc2021/cinema-a2#França
 :França rdf:type owl:NamedIndividual ,
                  :País .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#Inglaterra
+###  http://www.di.uminho.pt/prc2021/cinema-a2#Inglaterra
 :Inglaterra rdf:type owl:NamedIndividual ,
                      :País .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#KristenStewart
+###  http://www.di.uminho.pt/prc2021/cinema-a2#KristenStewart
 :KristenStewart rdf:type owl:NamedIndividual ,
                          :Pessoa ;
                 :atuou :Twilight ;
                 :sexo "F"^^xsd:string .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#MelissaRosenberg
+###  http://www.di.uminho.pt/prc2021/cinema-a2#MelissaRosenberg
 :MelissaRosenberg rdf:type owl:NamedIndividual ,
                            :Pessoa ;
                   :escreveu :ArgumentoTwilight ;
                   :sexo "F"^^xsd:string .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#PT
+###  http://www.di.uminho.pt/prc2021/cinema-a2#PT
 :PT rdf:type owl:NamedIndividual ,
              :Língua .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#Portugal
+###  http://www.di.uminho.pt/prc2021/cinema-a2#Portugal
 :Portugal rdf:type owl:NamedIndividual ,
                    :País .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#RobertPattinson
+###  http://www.di.uminho.pt/prc2021/cinema-a2#RobertPattinson
 :RobertPattinson rdf:type owl:NamedIndividual ,
                           :Pessoa ;
                  :atuou :Twilight ;
                  :sexo "M"^^xsd:string .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#TaylorLautner
+###  http://www.di.uminho.pt/prc2021/cinema-a2#TaylorLautner
 :TaylorLautner rdf:type owl:NamedIndividual ,
                         :Pessoa ;
                :atuou :Twilight ;
                :sexo "M"^^xsd:string .
 
 
-###  http://www.semanticweb.org/prc2021/cinema/v1#Twilight
+###  http://www.di.uminho.pt/prc2021/cinema-a2#Twilight
 :Twilight rdf:type owl:NamedIndividual ,
                    :Filme ;
           :temArgumento :ArgumentoTwilight ;
