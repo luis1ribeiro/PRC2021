@@ -1,4 +1,4 @@
-@prefix : <http://www.semanticweb.org/xalug/ontologies/prc/advogacia#> .
+@prefix : <http://www.di.uminho.pt/prc2021/advogacia#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -28,35 +28,27 @@
 #################################################################
 
 ###  http://www.di.uminho.pt/prc2021/advogacia#bebida
-:bebida rdf:type owl:DatatypeProperty ;
-        rdfs:subPropertyOf owl:topDataProperty .
+:bebida rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.di.uminho.pt/prc2021/advogacia#carro
-:carro rdf:type owl:DatatypeProperty ;
-       rdfs:subPropertyOf :corGravata .
+:carro rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.di.uminho.pt/prc2021/advogacia#corGravata
-:corGravata rdf:type owl:DatatypeProperty ;
-            rdfs:subPropertyOf :carro ,
-                               :nome .
+:corGravata rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.di.uminho.pt/prc2021/advogacia#idade
-:idade rdf:type owl:DatatypeProperty ;
-       rdfs:subPropertyOf owl:topDataProperty .
+:idade rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.di.uminho.pt/prc2021/advogacia#nome
-:nome rdf:type owl:DatatypeProperty ;
-      rdfs:subPropertyOf owl:topDataProperty .
+:nome rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.di.uminho.pt/prc2021/advogacia#área
-:área rdf:type owl:DatatypeProperty ;
-      rdfs:subPropertyOf :nome ,
-                         owl:topDataProperty .
+:área rdf:type owl:DatatypeProperty .
 
 
 #################################################################

@@ -27,37 +27,27 @@
 #################################################################
 
 ###  http://www.di.uminho.pt/prc2021/advogacia#bebida
-<http://www.di.uminho.pt/prc2021/advogacia#bebida> rdf:type owl:DatatypeProperty ;
-                                                   rdfs:subPropertyOf owl:topDataProperty .
+<http://www.di.uminho.pt/prc2021/advogacia#bebida> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.di.uminho.pt/prc2021/advogacia#carro
-<http://www.di.uminho.pt/prc2021/advogacia#carro> rdf:type owl:DatatypeProperty ;
-                                                  owl:equivalentProperty <http://www.di.uminho.pt/prc2021/advogacia#corGravata> ;
-                                                  rdfs:subPropertyOf <http://www.di.uminho.pt/prc2021/advogacia#corGravata> ,
-                                                                     <http://www.di.uminho.pt/prc2021/advogacia#nome> .
+<http://www.di.uminho.pt/prc2021/advogacia#carro> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.di.uminho.pt/prc2021/advogacia#corGravata
-<http://www.di.uminho.pt/prc2021/advogacia#corGravata> rdf:type owl:DatatypeProperty ;
-                                                       rdfs:subPropertyOf <http://www.di.uminho.pt/prc2021/advogacia#carro> ,
-                                                                          <http://www.di.uminho.pt/prc2021/advogacia#nome> .
+<http://www.di.uminho.pt/prc2021/advogacia#corGravata> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.di.uminho.pt/prc2021/advogacia#idade
-<http://www.di.uminho.pt/prc2021/advogacia#idade> rdf:type owl:DatatypeProperty ;
-                                                  rdfs:subPropertyOf owl:topDataProperty .
+<http://www.di.uminho.pt/prc2021/advogacia#idade> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.di.uminho.pt/prc2021/advogacia#nome
-<http://www.di.uminho.pt/prc2021/advogacia#nome> rdf:type owl:DatatypeProperty ;
-                                                 rdfs:subPropertyOf owl:topDataProperty .
+<http://www.di.uminho.pt/prc2021/advogacia#nome> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.di.uminho.pt/prc2021/advogacia#área
-<http://www.di.uminho.pt/prc2021/advogacia#área> rdf:type owl:DatatypeProperty ;
-                                                 rdfs:subPropertyOf <http://www.di.uminho.pt/prc2021/advogacia#nome> ,
-                                                                    owl:topDataProperty .
+<http://www.di.uminho.pt/prc2021/advogacia#área> rdf:type owl:DatatypeProperty .
 
 
 #################################################################
@@ -86,10 +76,7 @@
                                                <http://www.di.uminho.pt/prc2021/advogacia#carro> "Crossover"^^xsd:string ;
                                                <http://www.di.uminho.pt/prc2021/advogacia#corGravata> "verde"^^xsd:string ;
                                                <http://www.di.uminho.pt/prc2021/advogacia#idade> 40 ;
-                                               <http://www.di.uminho.pt/prc2021/advogacia#nome> "Crossover"^^xsd:string ,
-                                                                                                "Imobiliária"^^xsd:string ,
-                                                                                                "Otávio"^^xsd:string ,
-                                                                                                "verde"^^xsd:string ;
+                                               <http://www.di.uminho.pt/prc2021/advogacia#nome> "Otávio"^^xsd:string ;
                                                <http://www.di.uminho.pt/prc2021/advogacia#área> "Imobiliária"^^xsd:string .
 
 
@@ -103,10 +90,7 @@
                                                <http://www.di.uminho.pt/prc2021/advogacia#carro> "Pickup"^^xsd:string ;
                                                <http://www.di.uminho.pt/prc2021/advogacia#corGravata> "amarelo"^^xsd:string ;
                                                <http://www.di.uminho.pt/prc2021/advogacia#idade> 30 ;
-                                               <http://www.di.uminho.pt/prc2021/advogacia#nome> "Alberto"^^xsd:string ,
-                                                                                                "Pickup"^^xsd:string ,
-                                                                                                "Trabalhista"^^xsd:string ,
-                                                                                                "amarelo"^^xsd:string ;
+                                               <http://www.di.uminho.pt/prc2021/advogacia#nome> "Alberto"^^xsd:string ;
                                                <http://www.di.uminho.pt/prc2021/advogacia#área> "Trabalhista"^^xsd:string .
 
 
@@ -120,10 +104,7 @@
                                                <http://www.di.uminho.pt/prc2021/advogacia#carro> "Hyundai"^^xsd:string ;
                                                <http://www.di.uminho.pt/prc2021/advogacia#corGravata> "azul"^^xsd:string ;
                                                <http://www.di.uminho.pt/prc2021/advogacia#idade> 34 ;
-                                               <http://www.di.uminho.pt/prc2021/advogacia#nome> "Comercial"^^xsd:string ,
-                                                                                                "Hyundai"^^xsd:string ,
-                                                                                                "Ulisses"^^xsd:string ,
-                                                                                                "azul"^^xsd:string ;
+                                               <http://www.di.uminho.pt/prc2021/advogacia#nome> "Ulisses"^^xsd:string ;
                                                <http://www.di.uminho.pt/prc2021/advogacia#área> "Comercial"^^xsd:string .
 
 
@@ -137,10 +118,7 @@
                                                <http://www.di.uminho.pt/prc2021/advogacia#carro> "SUV"^^xsd:string ;
                                                <http://www.di.uminho.pt/prc2021/advogacia#corGravata> "vermelha"^^xsd:string ;
                                                <http://www.di.uminho.pt/prc2021/advogacia#idade> 37 ;
-                                               <http://www.di.uminho.pt/prc2021/advogacia#nome> "Civil"^^xsd:string ,
-                                                                                                "Luís"^^xsd:string ,
-                                                                                                "SUV"^^xsd:string ,
-                                                                                                "vermelha"^^xsd:string ;
+                                               <http://www.di.uminho.pt/prc2021/advogacia#nome> "Luís"^^xsd:string ;
                                                <http://www.di.uminho.pt/prc2021/advogacia#área> "Civil"^^xsd:string .
 
 
@@ -153,10 +131,7 @@
                                                <http://www.di.uminho.pt/prc2021/advogacia#carro> "Subaru"^^xsd:string ;
                                                <http://www.di.uminho.pt/prc2021/advogacia#corGravata> "branca"^^xsd:string ;
                                                <http://www.di.uminho.pt/prc2021/advogacia#idade> 44 ;
-                                               <http://www.di.uminho.pt/prc2021/advogacia#nome> "Carlos"^^xsd:string ,
-                                                                                                "Consumidor"^^xsd:string ,
-                                                                                                "Subaru"^^xsd:string ,
-                                                                                                "branca"^^xsd:string ;
+                                               <http://www.di.uminho.pt/prc2021/advogacia#nome> "Carlos"^^xsd:string ;
                                                <http://www.di.uminho.pt/prc2021/advogacia#área> "Consumidor"^^xsd:string .
 
 
